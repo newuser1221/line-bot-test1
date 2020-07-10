@@ -23,7 +23,7 @@ def callback():
     signature = request.headers['X-Line-Signature']
 
     # get request body as text
-    body = request.get_data(as_text=True)
+    body = request.get_data(as_text=True  )
     app.logger.info("Request body: " + body)
 
     # handle webhook body
@@ -167,7 +167,7 @@ def flex():
                           {
                             "type": "text",
                             "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-                            "wrap": true,
+                            "wrap": True  ,
                             "color": "#666666",
                             "size": "sm",
                             "flex": 5
@@ -189,7 +189,7 @@ def flex():
                           {
                             "type": "text",
                             "text": "10:00 - 23:00",
-                            "wrap": true,
+                            "wrap": True  ,
                             "color": "#666666",
                             "size": "sm",
                             "flex": 5
