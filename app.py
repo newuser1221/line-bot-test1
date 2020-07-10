@@ -80,7 +80,7 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
-def flex():
+def flex(event):
     msg = event.message.text
     if 'cafe' in msg:
         flex_message = FlexSendMessage('Hello world',{
