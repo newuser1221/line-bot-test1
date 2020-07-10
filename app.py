@@ -197,7 +197,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = '我看不懂你說甚麼?'
+    r = '我看不懂你說甚麼????'
     flex_message = flex()
     
     if '圖片' in msg:
