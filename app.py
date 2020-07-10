@@ -1,5 +1,5 @@
 from flask import Flask, request, abort
-
+from chalice import Chalice
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -15,6 +15,13 @@ app = Flask(__name__)
 
 line_bot_api = LineBotApi('b6EaTtzpXIHVJ1yiTWjvHvAClDSD9DaN7s4s/5OGrO85efGG+aQLEFidQzyH1vqoVnmBcs15oxhwLJxrhyvP5Be92L+FZQPZhdi6x3bcDiWl0Ug893ch0gj8aUr+Ru9WJkucxlNE75ZbI37aHn5XiwdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('0d3b0de5b0284c15db10e4244fd46340')
+
+app = Chalice(app_name='line_bot_reply')
+line_bot_api = LineBotApi('b6EaTtzpXIHVJ1yiTWjvHvAClDSD9DaN7s4s/5OGrO85efGG+aQLEFidQzyH1vqoVnmBcs15oxhwLJxrhyvP5Be92L+FZQPZhdi6x3bcDiWl0Ug893ch0gj8aUr+Ru9WJkucxlNE75ZbI37aHn5XiwdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('0d3b0de5b0284c15db10e4244fd46340')
+
+
+
 
 def flex():
     return FlexSendMessage('Hello world',{
