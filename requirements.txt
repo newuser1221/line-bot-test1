@@ -1,0 +1,4 @@
+#需要的套件
+line-bot-sdk
+gunicorn
+flask
