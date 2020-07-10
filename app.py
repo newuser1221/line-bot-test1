@@ -205,8 +205,8 @@ def handle_message(event):
     
     if '圖片' in msg:
         image_message = ImageSendMessage(
-            original_content_url='https://cdn.hk01.com/di/media/images/3023738/org/67df85b6f7f06a7624bed0dd5f1f6afa.jpg/WRIzIxRqUxud42IOEObM_e9aHf1qKAWlokR5eqJEeXo?v=w1280.png',
-            preview_image_url='https://cdn.hk01.com/di/media/images/3023738/org/67df85b6f7f06a7624bed0dd5f1f6afa.jpg/WRIzIxRqUxud42IOEObM_e9aHf1qKAWlokR5eqJEeXo?v=w1280.png')
+            original_content_url='https://cdn.hk01.com/di/media/images/3023738/org/67df85b6f7f06a7624bed0dd5f1f6afa.jpg/WRIzIxRqUxud42IOEObM_e9aHf1qKAWlokR5eqJEeXo?v=w1280',
+            preview_image_url='https://cdn.hk01.com/di/media/images/3023738/org/67df85b6f7f06a7624bed0dd5f1f6afa.jpg/WRIzIxRqUxud42IOEObM_e9aHf1qKAWlokR5eqJEeXo?v=w1280')
         
         line_bot_api.reply_message(
         event.reply_token,
