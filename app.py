@@ -83,7 +83,8 @@ def handle_message(event):
 def flex(event):
     msg = event.message.text
     if 'cafe' in msg:
-        flex_message = FlexSendMessage('Hello world',{
+    	flex_message = flex()
+        return FlexSendMessage('Hello world',{
               "type": "bubble",
               "hero": {
                 "type": "image",
@@ -236,7 +237,7 @@ def flex(event):
         line_bot_api.reply_message(
         event.reply_token,
         flex_message)
-        return
+        
 
 if __name__ == "__main__":
     app.run()
