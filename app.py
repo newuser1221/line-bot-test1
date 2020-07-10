@@ -198,7 +198,8 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '我看不懂你說甚麼?'
-
+    flex_message = flex()
+    
     if '圖片' in msg:
         image_message = ImageSendMessage(
             original_content_url='https://cdn.hk01.com/di/media/images/3023738/org/67df85b6f7f06a7624bed0dd5f1f6afa.jpg/WRIzIxRqUxud42IOEObM_e9aHf1qKAWlokR5eqJEeXo?v=w1280.png',
@@ -238,8 +239,8 @@ def handle_message(event):
         TextSendMessage(text=r))
     
     if 'cafe' in msg:
-    	flex_message = flex()
-    	line_bot_api.reply_message(
+
+        line_bot_api.reply_message(
         event.reply_token,
         flex_message)
 if __name__ == "__main__":
