@@ -83,7 +83,7 @@ def handle_message(event):
 def flex(event):
     msg = event.message.text
     if 'cafe' in msg:
-    	flex_message = flex()
+        flex_message = flex()
         return FlexSendMessage('Hello world',{
               "type": "bubble",
               "hero": {
