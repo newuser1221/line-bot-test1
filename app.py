@@ -250,10 +250,10 @@ def handle_message(event):
         event.reply_token,
         flex_message)
 
+
         return
 if __name__ == "__main__":
     app.run()
-
 
 
 
