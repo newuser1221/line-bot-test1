@@ -35,7 +35,7 @@ def callback():
 
     return 'OK'
 
-@app.route("/new", methods=['POST'])
+
 
 
 @handler.add(MessageEvent, message=TextMessage)
