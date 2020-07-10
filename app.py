@@ -18,8 +18,8 @@ handler = WebhookHandler('0d3b0de5b0284c15db10e4244fd46340')
 
 def flex():
     return FlexSendMessage('Hello world',{
-    "type": "bubble",
-    "hero": {
+        "type": "bubble",
+        "hero": {
                 "type": "image",
                 "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
                 "size": "full",
