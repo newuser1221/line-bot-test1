@@ -237,8 +237,6 @@ def handle_message(event):
     elif '訂位' in msg:
         r = '請問您想訂位的時間?'
     
-
-
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
